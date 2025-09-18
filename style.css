@@ -1,0 +1,113 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fa;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 30px 25px 25px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    margin: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #34495e;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccd6dd;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #f9fafb;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background: #1c5d8c;
+}
+
+#error-message {
+    color: #e74c3c;
+    background: #fdecea;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    display: none;
+    font-size: 0.98em;
+}
+
+#recap {
+    background: #eafaf1;
+    border: 1px solid #b7e4c7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    color: #222;
+    font-size: 1.05em;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 0;
+    }
+    .container {
+        max-width: 98vw;
+        width: 98vw;
+        padding: 15px 5vw;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+}
