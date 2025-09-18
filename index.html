@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="form-container">
+            <h1>Inscription</h1>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="login">Login *</label>
+                    <input type="text" id="login" name="login" required>
+                    <span class="error-message" id="login-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mot de passe *</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message" id="password-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirmer le mot de passe *</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span class="error-message" id="confirm-password-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="firstname">Prénom *</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                    <span class="error-message" id="firstname-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Nom *</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                    <span class="error-message" id="lastname-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Adresse *</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                    <span class="error-message" id="address-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Téléphone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message" id="phone-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">Date de naissance *</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                    <span class="error-message" id="birthdate-error"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">S'inscrire</button>
+            </form>
+        </div>
+
+        <div id="summary-container" class="hidden">
+            <h1>Récapitulatif de votre inscription</h1>
+            <div class="summary-content">
+                <div class="summary-item">
+                    <strong>Login:</strong> <span id="summary-login"></span>
+                </div>
+                <div class="summary-item">
+                    <strong>Prénom:</strong> <span id="summary-firstname"></span>
+                </div>
+                <div class="summary-item">
+                    <strong>Nom:</strong> <span id="summary-lastname"></span>
+                </div>
+                <div class="summary-item">
+                    <strong>Adresse:</strong> <span id="summary-address"></span>
+                </div>
+                <div class="summary-item">
+                    <strong>Email:</strong> <span id="summary-email"></span>
+                </div>
+                <div class="summary-item">
+                    <strong>Téléphone:</strong> <span id="summary-phone"></span>
+                </div>
+                <div class="summary-item">
+                    <strong>Date de naissance:</strong> <span id="summary-birthdate"></span>
+                </div>
+            </div>
+            <button type="button" class="back-btn" onclick="showForm()">Modifier les informations</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
